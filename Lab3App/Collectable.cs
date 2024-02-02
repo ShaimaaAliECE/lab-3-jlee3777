@@ -14,10 +14,10 @@ namespace Lab3App
             Description = description;
         }
 
-        public virtual void AddMe(List<Collectable> list)
+        public virtual void AddMe(List<Collectable> newlist)
         {
-            list.Add(this);
-            Console.WriteLine($"{Description} Collected, Congrats!!!!");
+            newlist.Add(this);
+            Console.WriteLine($"{Description} collected, Congrats !!!");
         }
 
         public abstract void Display();

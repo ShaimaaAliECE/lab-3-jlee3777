@@ -2,18 +2,16 @@ using System.Collections.Generic;
 
 namespace Lab3App
 {
-    
-    public abstract class Tool : Collectable
+        public abstract class Tool : Collectable
     {
         protected Tool(string description) : base(description) { }
 
-        public override void AddMe(List<Collectable> list)
+        public override void AddMe(List<Collectable> newlist)
         {
-            DoAction(); // Perform the tool's action when it's added to the collection.
-            base.AddMe(list);
+            DoAction(); 
+            base.AddMe(newlist);
         }
         public abstract void DoAction();
     }
-
 
 }

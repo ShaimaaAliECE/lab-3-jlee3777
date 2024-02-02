@@ -12,9 +12,9 @@ namespace Lab3App
             Score = score;
         }
 
-        public override void AddMe(List<Collectable> list)
+        public override void AddMe(List<Collectable> newlist)
         {
-            base.AddMe(list);
+            base.AddMe(newlist);
             UpdateTotalScore(); 
         }
 

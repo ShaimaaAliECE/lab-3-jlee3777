@@ -3,13 +3,14 @@ using System.Collections.Generic;
 
 namespace Lab3App
 {
+
     public class Coin : Treasure
     {
-        public int Value { get; set; }
+        public int getValue { get; set; }
 
         public Coin(string description, int score, int value) : base(description, score)
         {
-            Value = value;
+            getValue = value;
         }
 
         public override void AddMe(List<Collectable> list)
@@ -22,7 +23,7 @@ namespace Lab3App
         {
             if (Board != null)
             {
-                Board.TotalValue += Value;
+                Board.TotalValue += getValue;
                 Console.WriteLine($"Total Value is updated to: {Board.TotalValue}");
             }
         }
